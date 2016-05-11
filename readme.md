@@ -4,15 +4,9 @@ Python ASYNC bindings for interacting with the Razorpay API.
 
 ## Installation
 
-1.  Through pip
-```sh
-pip install tornado-razorpay
-```
+1.  Through pip: `pip install tornado-razorpay`
 
-2.  Manually
-```sh
-python setup.py install
-```
+2.  Manually: `python setup.py install`
 
 ## Usage
 
