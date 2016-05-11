@@ -6,7 +6,7 @@ if version_info[0] < 3 and version_info[1] < 5:
 
 setup(
     name="tornado-razorpay",
-    version="0.1.0",
+    version="0.1.1",
     description="Razorpay Asynchronous Tornado Python Client",
     url="https://github.com/nkanish2002/tornado-razorpay",
     author="Anish Gupta",
