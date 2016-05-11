@@ -1,0 +1,5 @@
+# All the libraries require Python 3.4 and above. Python 3.5 is preferred.
+tornado>=4.3
+# http://www.tornadoweb.org/en/stable/
+yajl>=0.3.5
+# http://lasagna.io/py-yajl/
