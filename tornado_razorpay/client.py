@@ -33,9 +33,10 @@ class _Payments:
                                                 auth_password=self.api_secret, raise_error=False)
         return response
 
-    async def capture(self, payment_id):
+    async def capture(self, payment_id, amount):
         url = "%s%s/capture" % (self.api_url, payment_id)
-        response = await self.http_client.fetch(url, method="POST", auth_username=self.api_key,
+        body = "amount=%s" % amount
+        response = await self.http_client.fetch(url, method="POST", body=body, auth_username=self.api_key,
                                                 auth_password=self.api_secret, raise_error=False)
         return response
 
