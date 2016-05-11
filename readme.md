@@ -14,8 +14,8 @@ You need to setup your key and secret using the following:
 You can find your API keys at <https://dashboard.razorpay.com/#/app/keys>.
 
 ```py
-import razorpay
-razor = razorpay.Client("<YOUR_API_KEY>", "<YOUR_API_SECRET>")
+from tornado_razorpay import Client
+razor = Client("<YOUR_API_KEY>", "<YOUR_API_SECRET>")
 ```
 
 
