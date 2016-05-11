@@ -60,5 +60,8 @@ razor = Client("<YOUR_API_KEY>", "<YOUR_API_SECRET>")
     await razor.refund.all("<PAYMENT_ID>")
     ```
 
+- Response that you receive from the functions is [`tornado.httpclient.HTTPResponse` object](http://tornadokevinlee.readthedocs.io/en/latest/httpclient.html#response-objects)
+  For the success of your API call can be determined if `response.code == 200` is `True`. Please handle Errors accordingly.
+
 NOTE: You will have to use Tornado's IOLoop to use this API in Async. If you are looking for Sync API's or don't know 
 what this is, please go to https://github.com/razorpay/razorpay-python.

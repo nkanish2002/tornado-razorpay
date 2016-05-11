@@ -78,14 +78,3 @@ class Client:
         self.http_client = AsyncHTTPClient()
         self.payment = _Payments(api_key, api_secret, self.http_client)
         self.refund = _Refunds(api_key, api_secret, self.http_client)
-
-
-# if __name__ == "__main__":
-#     from tornado.ioloop import IOLoop
-#     from bpython import embed
-#
-#     client = Client("<YOUR_API_KEY>", "<YOUR_API_SECRET>")
-#     event_loop = IOLoop().current()
-#     resp1 = event_loop.run_sync(lambda: client.payment.all(count=1))
-#     resp2 = event_loop.run_sync(lambda: client.payment.fetch(payment_id="pay_5UWWNIhctVbyRS"))
-#     embed(locals())
