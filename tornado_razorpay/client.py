@@ -1,5 +1,4 @@
 from tornado.httpclient import AsyncHTTPClient
-import yajl
 
 
 def _optional_args(args_lst):
@@ -53,7 +52,9 @@ class _Refunds:
 
     async def create(self, payment_id, data={}):
         url = "%s%s/refund" % (self.api_url, payment_id)
-        body = yajl.dumps(data)
+        body = ""
+        if "amount" in data:
+            body = "amount=%s" % data["amount"]
         response = await self.http_client.fetch(url, body=body, method="POST", auth_username=self.api_key,
                                                 auth_password=self.api_secret, raise_error=False)
         return response

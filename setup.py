@@ -12,7 +12,7 @@ setup(
     author="Anish Gupta",
     author_email="nkanish2002@gmail.com",
     license="MIT",
-    install_requires=["tornado>4", "yajl"],
+    install_requires=["tornado>4"],
     package_dir={'tornado_razorpay': 'tornado_razorpay'},
     packages=find_packages(),
     keywords='razorpay payment gateway india tornado async',
