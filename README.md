@@ -1,6 +1,6 @@
 # Razorpay Python Client
 
-# This project is longer being maintained/updated, please be cautious.
+#### This project is no longer being maintained.
 
 Python ASYNC bindings for interacting with the Razorpay API. 
 
